@@ -1,0 +1,26 @@
+<main class="bg-white">
+  <div class="grid grid-template-column gap-8 md:gap-4 mx-4 md:mx-16 py-16">
+    <h3>{{ settings.title }}</h3>
+    <p> {{ settings.content }}</p>
+  </div>
+</main>
+
+{% schema %}
+{
+  "name": "t:sections.main.name",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "main_heading",
+      "label": "t:sections.main.settings.main_heading.label",
+      "default": "t:sections.main.settings.main_heading.default"
+    },
+    {
+      "type": "richtext",
+      "id": "main_content",
+      "label": "t:sections.main.settings.main_content.label",
+      "default": "t:sections.main.settings.main_content.default"
+    }
+  ]
+}
+{% endschema %}

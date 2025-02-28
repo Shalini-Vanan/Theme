@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="{{staticAssetsUrl}}/favicon.ico">
+    <title>{{ site.title }} | {{ oraganization.title }}</title>
+    <link rel="stylesheet" href="{{staticAssetsUrl}}/style.css">
+
+    {{ content_for_header }}
+  </head>
+  <body class="bg-blue-dark">
+    {% render 'cookie-bar' %}
+
+    {{ content_for_layout }}
+    
+    <script type="speculationrules">
+      {
+        "prerender": [
+          {
+            "where": {
+              "and": [
+                { "href_matches": "/*" },
+                { "not": { "href_matches": "/checkout" } },
+                { "not": { "selector_matches": ".no-prerender" } },
+                { "not": { "selector_matches": "[rel~=nofollow]" } }
+              ]
+            },
+            "eagerness": "moderate"
+          }
+        ]
+      }
+    </script>
+  </body>
+</html>
+    

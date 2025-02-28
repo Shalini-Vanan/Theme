@@ -1,0 +1,44 @@
+{
+  "settings_schema": {
+    "social_media": {
+      "name": "Social media",
+      "settings": {
+        "social_twitter_link": {
+          "label": "X / Twitter",
+          "info": "https://x.com/"
+        },
+        "social_facebook_link": {
+          "label": "Facebook",
+          "info": "https://facebook.com/"
+        },
+        "social_linkedin_link": {
+          "label": "Linkedin",
+          "info": "https://linkedin.com"
+        },
+        "social_instagram_link": {
+          "label": "Instagram",
+          "info": "http://instagram.com/"
+        },
+        "social_youtube_link": {
+          "label": "YouTube",
+          "info": "https://www.youtube.com/"
+        }
+      }
+    }
+  },
+  "sections": {
+    "main": {
+      "name": "Main Section",
+      "settings": {
+        "main_heading": {
+          "label": "Title",
+          "default": "Welcome to the theme"
+        },
+        "main_content": {
+          "label": "Content",
+          "default": "This is the main section of the theme. You can customize it in the theme settings."
+        }
+      }
+    }
+  }
+}
