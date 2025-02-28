@@ -1,0 +1,16 @@
+{
+  "layout": "theme",
+  "sections": {
+    "main" : {
+      "type": "main-section",
+      "settings": {
+        "title": "Welcome to the theme",
+        "content": "This is the main section of the theme. You can customize it in the theme settings."
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
+  

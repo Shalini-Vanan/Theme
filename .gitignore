@@ -1,0 +1,7 @@
+# data/
+# server/
+node_modules
+.DS_Store
+.env
+style.css
+dist/
